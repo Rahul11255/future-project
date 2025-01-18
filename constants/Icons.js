@@ -33,6 +33,7 @@ import { HiOutlineDownload } from "react-icons/hi";
 import { IoEyeSharp } from "react-icons/io5";
 import { PiGlobe } from "react-icons/pi";
 import { LuUser } from "react-icons/lu";
+import { IoLogoFacebook } from "react-icons/io5";
 
 
 
@@ -72,7 +73,7 @@ export const Icons = {
     ARROW_LEFT: (props) => <HiOutlineArrowSmallLeft {...props} />,
     ARROW_RIGHT: (props) => <HiOutlineArrowSmallRight {...props} />,
     DOUBLE_ARROW_RIGHT: (props) => <MdKeyboardDoubleArrowRight {...props} />,
-    FACEBOOK: (props) => <TfiFacebook {...props} />,
+    FACEBOOK: (props) => <IoLogoFacebook {...props} />,
     TWITTER: (props) => <FaXTwitter {...props} />,
     ARROW: (props) => <MdKeyboardArrowRight {...props} />,
     FILL_CROSS: (props) => <IoMdCloseCircle {...props} />,

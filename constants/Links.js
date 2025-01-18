@@ -51,6 +51,73 @@ export  const HeaderLinks = {
             name: "Hinduism",
             path: "/religion/hinduism",
             id: 3.1,
+            childrens : [
+              {
+                name: "Famous Temples",
+                path: "/temples/famous",
+                id: 3.11,
+              },
+              {
+                name: "Pilgrimages",
+                path: "/temples/pilgrimages",
+                id: 3.12,
+              },
+              {
+                name: "Temple Architecture",
+                path: "/temples/architecture",
+                id: 3.13,
+              },
+              {
+                name: "Famous Temples",
+                path: "/temples/famous",
+                id: 3.14,
+              },
+              {
+                name: "Pilgrimages",
+                path: "/temples/pilgrimages",
+                id: 3.15,
+              },
+              {
+                name: "Temple Architecture",
+                path: "/temples/architecture",
+                id: 3.16,
+              },
+              {
+                name: "Famous Temples",
+                path: "/temples/famous",
+                id: 3.17,
+              },
+              {
+                name: "Pilgrimages",
+                path: "/temples/pilgrimages",
+                id: 3.18,
+              },
+              {
+                name: "Temple Architecture",
+                path: "/temples/architecture",
+                id: 3.18,
+              },
+              {
+                name: "Temple Architecture",
+                path: "/temples/architecture",
+                id: 3.16,
+              },
+              {
+                name: "Famous Temples",
+                path: "/temples/famous",
+                id: 3.17,
+              },
+              {
+                name: "Pilgrimages",
+                path: "/temples/pilgrimages",
+                id: 3.18,
+              },
+              {
+                name: "Temple Architecture",
+                path: "/temples/architecture",
+                id: 3.18,
+              },
+            ]
           },
           {
             name: "Islam",
@@ -77,11 +144,7 @@ export  const HeaderLinks = {
             path: "/religion/jainism",
             id: 3.6,
           },
-          {
-            name: "Religious Places",
-            path: "/religion/places",
-            id: 3.7,
-          },
+        
         ],
       },
       {
@@ -226,6 +289,11 @@ export  const HeaderLinks = {
             name: "Wildlife Tours",
             path: "/tourism/wildlife",
             id: 8.4,
+          },
+          {
+            name: "Religious Places",
+            path: "/religion/places",
+            id: 8.5,
           },
         ],
       },
