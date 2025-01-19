@@ -15,7 +15,8 @@ const Header = () => {
   };
 
   return (
-    <header className="shadow-custom-light relative">
+    <div className=" sticky top-0 z-50 bg-white">
+    <header className="  relative">
       <Container>
         <nav className="flex justify-between py-2 lg:py-0 items-center">
           <div className="flex  items-center">
@@ -82,6 +83,7 @@ const Header = () => {
         </div>
       </div>
     </header>
+    </div>
   );
 };
 

@@ -48,16 +48,17 @@ const MenuList = () => {
             {/* Mega Dropdown Menu */}
             {v?.childrens && activeMenu === i && (
                 <>
-                <div className=" absolute flex  left-0 justify-center items-center text-center z-50  w-full top-full">
-                 <span className="text-maroon font-meow lg:text-[25px] xl:text-[28px]"> {v?.name} </span> 
-                </div>
+               
               <div
-                className="absolute  left-0 top-full w-full lg:px-[15%] 2xl:px-[21.3%] flex justify-between     bg-white shadow-custom-light overflow-hidden transition-all ease-out duration-1000"
+                className="absolute  left-0 top-full w-full lg:px-[15%] 2xl:px-[21.3%] flex justify-between z-50     bg-white shadow-custom-light overflow-hidden transition-all ease-out duration-1000"
                 style={{
                   maxHeight: activeMenu === i ? "400px" : "0",
                   opacity: activeMenu === i ? "1" : "0",
                 }}
               >
+               <div className=" absolute flex  left-0 justify-center items-center text-center    w-full top-0">
+                 <span className="text-maroon font-meow lg:text-[25px] xl:text-[28px]"> {v?.name} </span> 
+                </div>
              <ul className="flex flex-col flex-wrap items-left py-10  ">
                 {v.childrens.map((child, idx) => (
                 <li

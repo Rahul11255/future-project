@@ -1,9 +1,10 @@
+import HomeMain from '@/components/home/HomeMain'
 import React from 'react'
 
 const Home = () => {
   return (
     <div>
-      {/* <h2 className='text-center'>Rahul Patel</h2> */}
+      <HomeMain/>
     </div>
   )
 }

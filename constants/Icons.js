@@ -34,6 +34,8 @@ import { IoEyeSharp } from "react-icons/io5";
 import { PiGlobe } from "react-icons/pi";
 import { LuUser } from "react-icons/lu";
 import { IoLogoFacebook } from "react-icons/io5";
+import { GrLinkPrevious } from "react-icons/gr";
+import { GrLinkNext } from "react-icons/gr";
 
 
 
@@ -88,6 +90,8 @@ export const Icons = {
     EYE: (props) => <IoEyeSharp {...props} />,
     GLOBE: (props) => <PiGlobe {...props} />,
     USER: (props) => <LuUser {...props} />,
+    PREV: (props) => <GrLinkPrevious {...props} />,
+    NEXT: (props) => <GrLinkNext {...props} />,
     
     
     
