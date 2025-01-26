@@ -24,7 +24,7 @@ const FeatureSlides = () => {
   };
 
   return (
-    <Container className=" py-5 md:py-10 lg:py-16 relative">
+    <Container className=" mt-5 md:mt-10 lg:mt-16 relative">
      
         <div className=" ">
            <Heading className=" uppercase">
