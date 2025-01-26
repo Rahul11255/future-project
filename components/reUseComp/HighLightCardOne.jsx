@@ -28,14 +28,14 @@ const HighLightCardOne = ({data={}}) => {
 
   return (
     <div className="p-1 grid sm:grid-cols-2 gap-1 sm:gap-5 mt-4">
-      <div className="sm:h-[280px] lg:h-[300px] overflow-hidden">
-        <div className={`w-full h-[200px] sm:h-full transition-all duration-1000 transform ${isImageChanging ? ' scale-0' : ' scale-100'}`}>
+      <div className="overflow-hidden">
+        <div className={`w-full h-[200px] sm:h-full lg:h-[280px] transition-all duration-1000 transform ${isImageChanging ? ' scale-0' : ' scale-100'}`}>
           <Image
             src={appendImage}
             alt={title}
             width={500}
             height={500}
-            className="w-full h-full object-fill img-zoom"
+            className="w-full h-full object-cover img-zoom"
           />
         </div>
       </div>
