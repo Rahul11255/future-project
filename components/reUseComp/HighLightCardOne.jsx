@@ -34,6 +34,7 @@ const HighLightCardOne = ({data={}}) => {
             src={appendImage}
             alt={title}
             width={500}
+            onClick={()=>setAppendImage(image)}
             height={500}
             className="w-full h-full object-cover img-zoom"
           />

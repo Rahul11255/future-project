@@ -61,6 +61,8 @@ const HighLightCardTwo = ({data={}}) => {
       <Image
         src={appendImage}
         alt="img"
+        onClick={()=>setAppendImage(image)}
+
         width={500}
         height={500}
         className="w-full h-full object-fill img-zoom"
