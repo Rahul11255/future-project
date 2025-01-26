@@ -1,10 +1,12 @@
 import React from 'react'
 import HomeSlider from './HomeSlider'
+import FeatureSlides from './FeatureSlides'
 
 const HomeMain = () => {
   return (
-    <div>
+    <div className=' h-[1000vh]'>
         <HomeSlider/>
+        <FeatureSlides/>
     </div>
   )
 }

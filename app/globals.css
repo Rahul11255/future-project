@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Italiana&family=Meow+Script&family=Oregano:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
 
+/* epic-ride font from cdn fonts */
+@import url('https://fonts.cdnfonts.com/css/epic-ride');
+
+/* montserrat font from  google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 @tailwind base;
 @tailwind components;
@@ -11,11 +17,110 @@
   margin: 0px;
   box-sizing: border-box;
   font-family: "Poppins", serif;
-
+  /* font-family: "Montserrat", serif; */
 }
+
+.epic-ride {
+  font-family: 'Epic Ride', sans-serif;
+}
+
+.montserrat {
+  font-family: "Montserrat", serif;
+  font-style: normal;
+}
+
 
 .font-meow {
   font-family: "Meow Script", serif;
   font-weight: 400;
   font-style: normal;
 }
+
+
+
+
+
+/* Base (default for all screens smaller than 768px) */
+h1 {
+  font-size: 25px;
+}
+h2 {
+  font-size: 22px;
+}
+h3 {
+  font-size: 20px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+p {
+  font-size: 14px;
+}
+span {
+  font-size: 14px;
+}
+
+/* Medium screens (md - 768px and above) */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 19px;
+  }
+  p {
+    font-size: 15px;
+  }
+  span {
+    font-size: 15px;
+  }
+}
+
+/* Large screens (lg - 1024px and above) */
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 33px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  h4 {
+    font-size: 25px;
+  }
+  h5 {
+    font-size: 23px;
+  }
+  p {
+    font-size: 16px;
+  }
+  span {
+    font-size: 16px;
+  }
+}
+
+
+.img-zoom {
+  scale: 1;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smoother easing */
+}
+
+.img-zoom:hover {
+  transform: scale(1.05);
+}
+
+

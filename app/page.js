@@ -5,7 +5,6 @@ const Home = () => {
   return (
     <div>
       <HomeMain/>
-      <h2 className='text-center py-1'> Rahul Patel</h2>
     </div>
   )
 }

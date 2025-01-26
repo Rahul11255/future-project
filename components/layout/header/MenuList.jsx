@@ -31,10 +31,10 @@ const MenuList = () => {
         {HeaderLinks.MENU_LINKS.map((v, i) => (
           <li
             key={i}
-            className=" text-[13px]  xl:text-[14px]   text-nowrap hover:text-primary transition-all ease-out duration-300  flex gap-1 items-center"
+            className="  text-nowrap hover:text-primary transition-all ease-out duration-300  flex gap-1 items-center"
             onMouseEnter={() => handleHover(i)}
           >
-           <span className=" cursor-pointer py-5"> {v.name} </span>
+           <span className=" cursor-pointer text-[13px]  lg:text-[14px]   py-5"> {v.name} </span>
             {v?.childrens && (
               <span>
                 {activeMenu === i ? (
@@ -57,7 +57,7 @@ const MenuList = () => {
                 }}
               >
                <div className=" absolute flex  left-0 justify-center items-center text-center    w-full top-0">
-                 <span className="text-maroon font-meow lg:text-[25px] xl:text-[28px]"> {v?.name} </span> 
+                 <span className="text-maroon epic-ride lg:text-[25px] xl:text-[35px]"> {v?.name} </span> 
                 </div>
              <ul className="flex flex-col flex-wrap items-left py-10  ">
                 {v.childrens.map((child, idx) => (
@@ -67,7 +67,7 @@ const MenuList = () => {
                     onMouseEnter={() => handleSubHover(idx)}
                     onMouseLeave={handleSubLeave}
                 >
-                   <p className=" flex gap-1 items-center text-center cursor-pointer hover:text-orange">   {child.name}
+                   <p className=" flex gap-1 lg:text-[14px] items-center text-center cursor-pointer hover:text-orange">   {child.name}
                     {child?.childrens && <Icons.ARROW_RIGHT />}
                     </p>
                     {child?.childrens && activeSubMenu === idx && (
