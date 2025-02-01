@@ -2,7 +2,7 @@
 
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {Autoplay, Pagination, Mousewheel } from "swiper/modules";
+import { Autoplay, Pagination, Mousewheel } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import Container from "../custom/Container";
@@ -11,6 +11,7 @@ import { Icons } from "@/constants/Icons";
 import Image from "next/image";
 import { states } from "@/constants/featureslidescontent";
 import Heading from "../reUseComp/Heading";
+import Link from "next/link";
 
 const FeatureSlides = () => {
   const swiperRef = useRef(null);
@@ -25,13 +26,12 @@ const FeatureSlides = () => {
 
   return (
     <Container className=" mt-5 md:mt-10 lg:mt-16 relative">
-     
-        <div className=" ">
-           <Heading className=" uppercase">
-           Discover India's Richness: Culture, Heritage & Beauty
-           </Heading>
-        </div>
-      
+      <div className=" ">
+        <Heading className=" uppercase">
+          Discover India's Richness: Culture, Heritage & Beauty
+        </Heading>
+      </div>
+
       <button
         className="absolute top-1/2 left-1 md:-left-2 z-10 transform -translate-y-1/2 bg-white text  text-black  hover:text-primary transition-colors duration-300 ease-in-out px-3 md:px-4 py-2 "
         onClick={handlePrev}
@@ -54,8 +54,7 @@ const FeatureSlides = () => {
         pagination={{
           dynamicBullets: true,
         }}
-        modules={[Mousewheel,Autoplay, Pagination]}
-
+        modules={[Mousewheel, Autoplay, Pagination]}
         // mousewheel={true}
         className="mySwiper h-full"
       >
@@ -94,12 +93,14 @@ const FeatureSlides = () => {
                       </Typography>
                     </div>
                     <div className="text-center">
-                      <Typography
-                        variant="p"
-                        className=" uppercase font-normal tracking-widest mt-5 "
-                      >
-                        Keep reading . . .
-                      </Typography>
+                      <Link href={`/discover/${v.url}`}>
+                        <Typography
+                          variant="p"
+                          className=" uppercase font-normal tracking-widest mt-5 "
+                        >
+                          Keep reading . . .
+                        </Typography>
+                      </Link>
                     </div>
                     <div className="text-[25px] mt-5 flex justify-center gap-3">
                       <Icons.FACEBOOK className="text-[#3B5998]" />{" "}
