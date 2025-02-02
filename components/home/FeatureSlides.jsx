@@ -93,7 +93,7 @@ const FeatureSlides = () => {
                       </Typography>
                     </div>
                     <div className="text-center">
-                      <Link href={`/discover/${v.url}`}>
+                      <Link href={`/discover${v.url}`}>
                         <Typography
                           variant="p"
                           className=" uppercase font-normal tracking-widest mt-5 "

@@ -5,7 +5,7 @@ import Highlights from './Highlights'
 
 const HomeMain = () => {
   return (
-    <div className=' h-[1000vh]'>
+    <div>
         <HomeSlider/>
         <FeatureSlides/>
         <Highlights/>
